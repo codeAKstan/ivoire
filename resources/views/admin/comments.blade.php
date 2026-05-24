@@ -3,12 +3,12 @@
 
     <div class="space-y-8">
         @if(session('success'))
-            <div class="bg-emerald-50 border-l-4 border-[#18c596] p-6 rounded-xl flex items-center gap-4 animate-fadeIn">
-                <div class="w-10 h-10 bg-[#18c596] rounded-full flex items-center justify-center text-white shadow-lg shadow-[#18c596]/20">
+            <div class="bg-emerald-50 border-l-4 border-[#cda151] p-6 rounded-xl flex items-center gap-4 animate-fadeIn">
+                <div class="w-10 h-10 bg-[#cda151] rounded-full flex items-center justify-center text-white shadow-lg shadow-[#cda151]/20">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                 </div>
                 <div>
-                    <p class="text-[#1b2559] font-bold text-sm">Success!</p>
+                    <p class="text-[#151515] font-bold text-sm">Success!</p>
                     <p class="text-gray-400 text-xs mt-0.5">{{ session('success') }}</p>
                 </div>
             </div>
@@ -17,7 +17,7 @@
         <!-- Comments Table -->
         <div class="bg-white rounded-[30px] shadow-sm border border-gray-50 overflow-hidden">
             <div class="p-8 flex items-center justify-between border-b border-gray-50">
-                <h3 class="text-lg font-bold text-[#1b2559]">Recent Comments</h3>
+                <h3 class="text-lg font-bold text-[#151515]">Recent Comments</h3>
             </div>
 
             <div class="overflow-x-auto">
@@ -37,16 +37,16 @@
                             $authorName = $comment->user_id ? $comment->user->name : $comment->guest_name;
                             $isAdmin = $comment->user_id && $comment->user->is_admin;
                         @endphp
-                        <tr class="group hover:bg-[#f4f7fe]/50 transition-all">
+                        <tr class="group hover:bg-[#FAF8F5]/50 transition-all">
                             <td class="px-8 py-6">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 {{ $isAdmin ? 'bg-[#1b2559]' : 'bg-[#18c596]/10' }} rounded-xl flex items-center justify-center {{ $isAdmin ? 'text-white' : 'text-[#18c596]' }} font-bold text-sm">
+                                    <div class="w-10 h-10 {{ $isAdmin ? 'bg-[#151515]' : 'bg-[#cda151]/10' }} rounded-xl flex items-center justify-center {{ $isAdmin ? 'text-white' : 'text-[#cda151]' }} font-bold text-sm">
                                         {{ substr($authorName, 0, 1) }}
                                     </div>
                                     <div>
-                                        <p class="text-xs font-bold text-[#1b2559]">{{ $authorName }}</p>
+                                        <p class="text-xs font-bold text-[#151515]">{{ $authorName }}</p>
                                         @if($isAdmin)
-                                            <span class="text-[8px] font-bold uppercase tracking-widest text-[#18c596]">Admin</span>
+                                            <span class="text-[8px] font-bold uppercase tracking-widest text-[#cda151]">Admin</span>
                                         @else
                                             <span class="text-[8px] font-bold uppercase tracking-widest text-gray-400">Contributor</span>
                                         @endif
@@ -57,7 +57,7 @@
                                 <p class="text-xs text-gray-500 leading-relaxed max-w-md line-clamp-2 italic">"{{ $comment->content }}"</p>
                             </td>
                             <td class="px-8 py-6">
-                                <a href="{{ route('posts.show', $comment->post->slug) }}" target="_blank" class="text-xs font-medium text-[#1b2559] hover:text-[#18c596] transition-colors line-clamp-1">
+                                <a href="{{ route('posts.show', $comment->post->slug) }}" target="_blank" class="text-xs font-medium text-[#151515] hover:text-[#cda151] transition-colors line-clamp-1">
                                     {{ $comment->post->title }}
                                 </a>
                             </td>

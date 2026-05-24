@@ -5,7 +5,7 @@
         @csrf
         <!-- Image Upload Card -->
         <div class="bg-white rounded-[30px] p-8 shadow-sm border border-gray-50 overflow-hidden">
-            <h3 class="text-sm font-bold text-[#1b2559] mb-6">Upload Service Image <span class="text-gray-300 font-normal ml-2">(Image must be below 5MB)</span></h3>
+            <h3 class="text-sm font-bold text-[#151515] mb-6">Upload Service Image <span class="text-gray-300 font-normal ml-2">(Image must be below 5MB)</span></h3>
             
             <div class="flex items-center gap-4">
                 <label class="flex-1 flex items-center justify-center gap-2 bg-[#5e72e4] hover:bg-[#4a5cd1] text-white px-8 py-4 rounded-2xl cursor-pointer transition-all shadow-lg shadow-[#5e72e4]/20 group">
@@ -13,7 +13,7 @@
                     <span class="text-xs font-bold uppercase tracking-widest">Choose file</span>
                     <input type="file" name="image" class="hidden">
                 </label>
-                <div class="flex-[3] bg-[#f4f7fe] rounded-2xl px-6 py-4 text-gray-400 text-sm font-light">
+                <div class="flex-[3] bg-[#FAF8F5] rounded-2xl px-6 py-4 text-gray-400 text-sm font-light">
                     No file chosen
                 </div>
             </div>
@@ -24,7 +24,7 @@
 
         <!-- Icon Selection Card -->
         <div class="bg-white rounded-[30px] p-8 shadow-sm border border-gray-50 overflow-hidden" x-data="{ selectedIcon: '{{ old('icon', '') }}' }">
-            <h3 class="text-sm font-bold text-[#1b2559] mb-8">Select Practice Icon</h3>
+            <h3 class="text-sm font-bold text-[#151515] mb-8">Select Practice Icon</h3>
             
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 @php
@@ -48,10 +48,10 @@
                 @foreach($icons as $icon)
                 <div 
                     @click="selectedIcon = '{{ $icon['id'] }}'"
-                    :class="selectedIcon === '{{ $icon['id'] }}' ? 'border-[#1b2559] bg-[#f4f7fe]' : 'border-gray-50 bg-white hover:border-gray-200'"
+                    :class="selectedIcon === '{{ $icon['id'] }}' ? 'border-[#151515] bg-[#FAF8F5]' : 'border-gray-50 bg-white hover:border-gray-200'"
                     class="p-6 rounded-[24px] border shadow-sm flex flex-col items-center gap-3 cursor-pointer transition-all group"
                 >
-                    <div class="w-10 h-10 flex items-center justify-center text-[#1b2559] transition-transform group-hover:scale-110">
+                    <div class="w-10 h-10 flex items-center justify-center text-[#151515] transition-transform group-hover:scale-110">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $icon['path'] }}"></path></svg>
                     </div>
                     <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{{ $icon['label'] }}</span>
@@ -67,16 +67,16 @@
         <!-- Details Card -->
         <div class="bg-white rounded-[30px] p-8 shadow-sm border border-gray-50 overflow-hidden space-y-8">
             <div class="space-y-2">
-                <label class="text-sm font-bold text-[#1b2559]">Title/Name of Service</label>
-                <input type="text" name="title" value="{{ old('title') }}" placeholder="Title/Name of Service" class="w-full bg-[#f4f7fe] border-none text-[#1b2559] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#18c596] transition-all text-sm font-medium placeholder-gray-300">
+                <label class="text-sm font-bold text-[#151515]">Title/Name of Service</label>
+                <input type="text" name="title" value="{{ old('title') }}" placeholder="Title/Name of Service" class="w-full bg-[#FAF8F5] border-none text-[#151515] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#cda151] transition-all text-sm font-medium placeholder-gray-300">
                 @error('title')
                     <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                 @enderror
             </div>
 
             <div class="space-y-2">
-                <label class="text-sm font-bold text-[#1b2559]">Description</label>
-                <textarea name="description" rows="6" placeholder="Describe the service..." class="w-full bg-[#f4f7fe] border-none text-[#1b2559] px-6 py-4 rounded-3xl focus:ring-1 focus:ring-[#18c596] transition-all text-sm font-medium placeholder-gray-300 resize-none">{{ old('description') }}</textarea>
+                <label class="text-sm font-bold text-[#151515]">Description</label>
+                <textarea name="description" rows="6" placeholder="Describe the service..." class="w-full bg-[#FAF8F5] border-none text-[#151515] px-6 py-4 rounded-3xl focus:ring-1 focus:ring-[#cda151] transition-all text-sm font-medium placeholder-gray-300 resize-none">{{ old('description') }}</textarea>
                 @error('description')
                     <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                 @enderror
@@ -84,7 +84,7 @@
         </div>
 
         <div class="flex justify-end pt-4">
-            <button type="submit" class="bg-[#18c596] hover:bg-[#15b085] text-white px-12 py-5 rounded-2xl font-bold text-sm tracking-widest uppercase transition-all duration-500 shadow-xl shadow-[#18c596]/20">
+            <button type="submit" class="bg-[#cda151] hover:bg-[#b88f40] text-white px-12 py-5 rounded-2xl font-bold text-sm tracking-widest uppercase transition-all duration-500 shadow-xl shadow-[#cda151]/20">
                 Register Service
             </button>
         </div>

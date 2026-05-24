@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ config('app.name', 'Ivoire') }} | Resources</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/logo/favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets/img/logo/favicon.png') }}">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="bg-[#121212] text-white antialiased">
@@ -15,8 +15,8 @@
             <section class="relative pt-40 pb-24 px-6 overflow-hidden bg-[#fafafa]">
                 <div class="max-w-7xl mx-auto relative z-10">
                     <div class="flex items-center gap-4 mb-8">
-                        <div class="h-[1px] w-12 bg-[#00c08b]"></div>
-                        <span class="text-xs font-bold tracking-[0.3em] uppercase text-[#00c08b]">Knowledge Hub</span>
+                        <div class="h-[1px] w-12 bg-[#cda151]"></div>
+                        <span class="text-xs font-bold tracking-[0.3em] uppercase text-[#cda151]">Knowledge Hub</span>
                     </div>
                     
                     <h1 class="text-5xl md:text-7xl lg:text-8xl font-light text-[#1a365d] leading-tight mb-10 tracking-tight" style="font-family: 'Playfair Display', serif;">
@@ -45,7 +45,7 @@
                 </div>
 
                 <!-- Decorative Pattern -->
-                <div class="absolute top-0 right-0 w-1/3 h-full bg-[#00c08b]/5 -skew-x-12 translate-x-1/2"></div>
+                <div class="absolute top-0 right-0 w-1/3 h-full bg-[#cda151]/5 -skew-x-12 translate-x-1/2"></div>
             </section>
 
             <!-- Spacing for the overlapping newsletter card -->

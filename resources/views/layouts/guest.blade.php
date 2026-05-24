@@ -19,7 +19,7 @@
         @livewireStyles
 
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/logo/favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets/img/logo/favicon.png') }}">
     </head>
     <body class="bg-[#0a0a0a] text-white antialiased font-['Inter']">
         <div class="min-h-screen flex flex-col justify-center items-center">

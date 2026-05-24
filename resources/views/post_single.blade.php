@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $post->title }} | Ivoire Legal</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/logo/favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets/img/logo/favicon.png') }}">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
@@ -16,9 +16,9 @@
             <section class="relative pt-40 pb-24 px-6 bg-[#fafafa] overflow-hidden">
                 <div class="max-w-4xl mx-auto relative z-10 text-center">
                     <div class="flex items-center justify-center gap-4 mb-8">
-                        <div class="h-[1px] w-8 bg-[#00c08b]"></div>
-                        <span class="text-[10px] font-bold tracking-[0.3em] uppercase text-[#00c08b]">{{ $post->category }}</span>
-                        <div class="h-[1px] w-8 bg-[#00c08b]"></div>
+                        <div class="h-[1px] w-8 bg-[#cda151]"></div>
+                        <span class="text-[10px] font-bold tracking-[0.3em] uppercase text-[#cda151]">{{ $post->category }}</span>
+                        <div class="h-[1px] w-8 bg-[#cda151]"></div>
                     </div>
                     
                     <h1 class="text-4xl md:text-6xl font-bold text-[#1a365d] leading-tight mb-8 tracking-tight" style="font-family: 'Playfair Display', serif;">
@@ -77,8 +77,8 @@
                     </div>
 
                     <!-- Comment Form -->
-                    <div class="bg-white p-10 rounded-[40px] shadow-sm border border-gray-50 mb-20">
-                        <h4 class="text-sm font-bold text-[#1b2559] mb-8 uppercase tracking-widest">Leave a Comment</h4>
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-gray-50 mb-20">
+                        <h4 class="text-sm font-bold text-[#151515] mb-8 uppercase tracking-widest">Leave a Comment</h4>
                         <form action="{{ route('comments.store', $post) }}" method="POST" class="space-y-6">
                             @csrf
                             <input type="hidden" name="parent_id" id="parent_id_input" value="">
@@ -94,7 +94,7 @@
                                 @guest
                                 <div class="space-y-2">
                                     <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Your Name</label>
-                                    <input type="text" name="name" placeholder="e.g. John Doe" class="w-full bg-[#f4f7fe] border-none text-[#1b2559] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#18c596] transition-all text-sm font-medium">
+                                    <input type="text" name="name" placeholder="e.g. John Doe" class="w-full bg-[#FAF8F5] border-none text-[#151515] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#cda151] transition-all text-sm font-medium">
                                     @error('name') <p class="text-red-500 text-[10px] font-bold uppercase mt-1">{{ $message }}</p> @enderror
                                 </div>
                                 @else
@@ -107,11 +107,11 @@
 
                             <div class="space-y-2">
                                 <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Message</label>
-                                <textarea name="content" rows="4" placeholder="Share your thoughts..." class="w-full bg-[#f4f7fe] border-none text-[#1b2559] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#18c596] transition-all text-sm font-medium leading-relaxed"></textarea>
+                                <textarea name="content" rows="4" placeholder="Share your thoughts..." class="w-full bg-[#FAF8F5] border-none text-[#151515] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#cda151] transition-all text-sm font-medium leading-relaxed"></textarea>
                                 @error('content') <p class="text-red-500 text-[10px] font-bold uppercase mt-1">{{ $message }}</p> @enderror
                             </div>
                             <div class="flex justify-end">
-                                <button type="submit" class="bg-[#1b2559] hover:bg-[#0b1437] text-white px-10 py-4 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all shadow-xl shadow-[#0b1437]/20">
+                                <button type="submit" class="bg-[#151515] hover:bg-[#151515] text-white px-10 py-4 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all shadow-xl shadow-[#151515]/20">
                                     Post Comment
                                 </button>
                             </div>
@@ -126,16 +126,16 @@
                         @endphp
                         <div class="space-y-8">
                             <div class="flex gap-6">
-                                <div class="w-12 h-12 bg-[#18c596] rounded-2xl flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#18c596]/20 shrink-0">
+                                <div class="w-12 h-12 bg-[#cda151] rounded-2xl flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#cda151]/20 shrink-0">
                                     {{ substr($commentName, 0, 1) }}
                                 </div>
                                 <div class="flex-1">
                                     <div class="flex items-center justify-between mb-2">
-                                        <h5 class="text-sm font-bold text-[#1b2559]">{{ $commentName }}</h5>
+                                        <h5 class="text-sm font-bold text-[#151515]">{{ $commentName }}</h5>
                                         <span class="text-[10px] text-gray-400 font-medium uppercase tracking-widest">{{ $comment->created_at->diffForHumans() }}</span>
                                     </div>
                                     <p class="text-sm text-gray-500 leading-relaxed font-light mb-4">{{ $comment->content }}</p>
-                                    <button onclick="setReply({{ $comment->id }}, '{{ $commentName }}')" class="text-[10px] font-bold text-[#18c596] uppercase tracking-widest hover:underline">Reply</button>
+                                    <button onclick="setReply({{ $comment->id }}, '{{ $commentName }}')" class="text-[10px] font-bold text-[#cda151] uppercase tracking-widest hover:underline">Reply</button>
                                 </div>
                             </div>
 
@@ -147,15 +147,15 @@
                                     $replyName = $reply->user_id ? $reply->user->name : $reply->guest_name;
                                 @endphp
                                 <div class="flex gap-6">
-                                    <div class="w-10 h-10 {{ $reply->user_id && $reply->user->is_admin ? 'bg-[#1b2559]' : 'bg-gray-200' }} rounded-xl flex items-center justify-center text-white font-bold text-sm shrink-0">
+                                    <div class="w-10 h-10 {{ $reply->user_id && $reply->user->is_admin ? 'bg-[#151515]' : 'bg-gray-200' }} rounded-xl flex items-center justify-center text-white font-bold text-sm shrink-0">
                                         {{ substr($replyName, 0, 1) }}
                                     </div>
                                     <div class="flex-1">
                                         <div class="flex items-center justify-between mb-2">
                                             <div class="flex items-center gap-2">
-                                                <h5 class="text-xs font-bold text-[#1b2559]">{{ $replyName }}</h5>
+                                                <h5 class="text-xs font-bold text-[#151515]">{{ $replyName }}</h5>
                                                 @if($reply->user_id && $reply->user->is_admin)
-                                                    <span class="bg-[#18c596]/10 text-[#18c596] text-[8px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full">Admin</span>
+                                                    <span class="bg-[#cda151]/10 text-[#cda151] text-[8px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full">Admin</span>
                                                 @endif
                                             </div>
                                             <span class="text-[10px] text-gray-400 font-medium uppercase tracking-widest">{{ $reply->created_at->diffForHumans() }}</span>

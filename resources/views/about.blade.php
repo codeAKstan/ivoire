@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ config('app.name', 'Ivoire') }} | About Us</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/logo/favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets/img/logo/favicon.png') }}">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="bg-[#121212] text-white antialiased">
@@ -27,7 +27,7 @@
                     </div>
 
                     <h2 class="text-4xl md:text-6xl lg:text-7xl font-medium leading-tight mb-8 tracking-tight opacity-0 animate-[fadeInUp_1s_ease-out_0.3s_forwards]" style="font-family: 'Playfair Display', serif;">
-                        The legal and compliance partner for Africa's <span class="italic text-[#18c596]">technology companies.</span>
+                        The legal and compliance partner for Africa's <span class="italic text-[#cda151]">technology companies.</span>
                     </h2>
 
                     <p class="text-base md:text-lg text-white/70 max-w-3xl mx-auto mb-10 leading-relaxed opacity-0 animate-[fadeInUp_1s_ease-out_0.6s_forwards]">
@@ -57,8 +57,8 @@
 
                 <div class="relative z-10 max-w-7xl mx-auto">
                     <div class="text-center mb-32">
-                        <h2 class="text-4xl md:text-6xl font-light mb-6 tracking-tight" style="font-family: 'Playfair Display', serif;">How we <span class="italic text-[#18c596]">operate</span></h2>
-                        <div class="h-[1px] w-24 bg-[#18c596]/50 mx-auto"></div>
+                        <h2 class="text-4xl md:text-6xl font-light mb-6 tracking-tight" style="font-family: 'Playfair Display', serif;">How we <span class="italic text-[#cda151]">operate</span></h2>
+                        <div class="h-[1px] w-24 bg-[#cda151]/50 mx-auto"></div>
                     </div>
 
                     <div class="relative min-h-[800px] md:min-h-[600px]">
@@ -67,7 +67,7 @@
                             
                             <!-- Item 1: Execution -->
                             <div class="group relative flex flex-col items-center justify-center transition-all duration-700 hover:-translate-y-4">
-                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#18c596]/5 border border-[#18c596]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#18c596]/10 group-hover:border-[#18c596]/40"></div>
+                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#cda151]/5 border border-[#cda151]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#cda151]/10 group-hover:border-[#cda151]/40"></div>
                                 <div class="relative z-10 text-center p-12 max-w-[240px]">
                                     <h3 class="text-2xl md:text-3xl font-medium mb-4 text-white" style="font-family: 'Playfair Display', serif;">Execution</h3>
                                     <p class="text-sm text-white/50 leading-relaxed font-light">
@@ -78,7 +78,7 @@
 
                             <!-- Item 2: Proactive -->
                             <div class="group relative flex flex-col items-center justify-center transition-all duration-700 hover:-translate-y-4 md:mt-40">
-                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#18c596]/5 border border-[#18c596]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#18c596]/10 group-hover:border-[#18c596]/40"></div>
+                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#cda151]/5 border border-[#cda151]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#cda151]/10 group-hover:border-[#cda151]/40"></div>
                                 <div class="relative z-10 text-center p-12 max-w-[240px]">
                                     <h3 class="text-2xl md:text-3xl font-medium mb-4 text-white" style="font-family: 'Playfair Display', serif;">Proactive</h3>
                                     <p class="text-sm text-white/50 leading-relaxed font-light">
@@ -89,7 +89,7 @@
 
                             <!-- Item 3: Commercial -->
                             <div class="group relative flex flex-col items-center justify-center transition-all duration-700 hover:-translate-y-4">
-                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#18c596]/5 border border-[#18c596]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#18c596]/10 group-hover:border-[#18c596]/40"></div>
+                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#cda151]/5 border border-[#cda151]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#cda151]/10 group-hover:border-[#cda151]/40"></div>
                                 <div class="relative z-10 text-center p-12 max-w-[240px]">
                                     <h3 class="text-2xl md:text-3xl font-medium mb-4 text-white" style="font-family: 'Playfair Display', serif;">Commercial</h3>
                                     <p class="text-sm text-white/50 leading-relaxed font-light">
@@ -100,7 +100,7 @@
 
                             <!-- Item 4: Quality -->
                             <div class="group relative flex flex-col items-center justify-center transition-all duration-700 hover:-translate-y-4 md:mt-40">
-                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#18c596]/5 border border-[#18c596]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#18c596]/10 group-hover:border-[#18c596]/40"></div>
+                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#cda151]/5 border border-[#cda151]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#cda151]/10 group-hover:border-[#cda151]/40"></div>
                                 <div class="relative z-10 text-center p-12 max-w-[240px]">
                                     <h3 class="text-2xl md:text-3xl font-medium mb-4 text-white" style="font-family: 'Playfair Display', serif;">Quality</h3>
                                     <p class="text-sm text-white/50 leading-relaxed font-light">

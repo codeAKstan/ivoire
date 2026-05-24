@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ config('app.name', 'Ivoire') }} | Practice Areas</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/logo/favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets/img/logo/favicon.png') }}">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="bg-[#121212] text-white antialiased">

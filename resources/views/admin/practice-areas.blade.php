@@ -23,22 +23,22 @@
             @endphp
 
             @foreach($services as $service)
-            <div class="bg-white rounded-[40px] p-10 shadow-sm border border-gray-50 flex flex-col items-center text-center group hover:border-[#18c596]/30 transition-all duration-500">
-                <div class="w-20 h-20 bg-[#f4f7fe] rounded-[24px] flex items-center justify-center text-[#1b2559] mb-8 group-hover:bg-[#18c596] group-hover:text-white transition-all duration-500 shadow-sm group-hover:shadow-xl group-hover:shadow-[#18c596]/20">
+            <div class="bg-white rounded-2xl p-10 shadow-sm border border-gray-50 flex flex-col items-center text-center group hover:border-[#cda151]/30 transition-all duration-500">
+                <div class="w-20 h-20 bg-[#FAF8F5] rounded-[24px] flex items-center justify-center text-[#151515] mb-8 group-hover:bg-[#cda151] group-hover:text-white transition-all duration-500 shadow-sm group-hover:shadow-xl group-hover:shadow-[#cda151]/20">
                     <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $iconPaths[$service->icon] ?? $iconPaths['advisory'] }}"></path></svg>
                 </div>
-                <h4 class="text-xl font-bold text-[#1b2559] mb-4" style="font-family: 'Playfair Display', serif;">{{ $service->title }}</h4>
+                <h4 class="text-xl font-bold text-[#151515] mb-4" style="font-family: 'Playfair Display', serif;">{{ $service->title }}</h4>
                 <p class="text-gray-400 text-sm font-light leading-relaxed mb-8 line-clamp-3">
                     {{ $service->description }}
                 </p>
                 <div class="mt-auto w-full flex gap-3">
-                    <a href="{{ route('admin.practices.edit', $service) }}" class="flex-1 bg-[#18c596] hover:bg-[#15b085] text-white py-4 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all shadow-lg shadow-[#18c596]/10 flex items-center justify-center">
+                    <a href="{{ route('admin.practices.edit', $service) }}" class="flex-1 bg-[#cda151] hover:bg-[#b88f40] text-white py-4 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all shadow-lg shadow-[#cda151]/10 flex items-center justify-center">
                         Edit Area
                     </a>
                     <form action="{{ route('admin.practices.destroy', $service) }}" method="POST" onsubmit="return confirm('Delete this practice area?')">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="w-14 h-14 bg-[#f4f7fe] hover:bg-red-50 text-gray-400 hover:text-red-500 rounded-2xl flex items-center justify-center transition-all">
+                        <button type="submit" class="w-14 h-14 bg-[#FAF8F5] hover:bg-red-50 text-gray-400 hover:text-red-500 rounded-2xl flex items-center justify-center transition-all">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
                         </button>
                     </form>
@@ -47,8 +47,8 @@
             @endforeach
 
             <!-- Add New Area Placeholder -->
-            <a href="{{ route('admin.practices.create') }}" class="bg-white rounded-[40px] p-10 border-2 border-dashed border-gray-100 flex flex-col items-center justify-center text-center group hover:border-[#18c596] transition-all duration-500">
-                <div class="w-20 h-20 bg-gray-50 rounded-[24px] flex items-center justify-center text-gray-300 mb-8 group-hover:bg-[#18c596]/10 group-hover:text-[#18c596] transition-all duration-500">
+            <a href="{{ route('admin.practices.create') }}" class="bg-white rounded-2xl p-10 border-2 border-dashed border-gray-100 flex flex-col items-center justify-center text-center group hover:border-[#cda151] transition-all duration-500">
+                <div class="w-20 h-20 bg-gray-50 rounded-[24px] flex items-center justify-center text-gray-300 mb-8 group-hover:bg-[#cda151]/10 group-hover:text-[#cda151] transition-all duration-500">
                     <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
                 </div>
                 <h4 class="text-xl font-bold text-gray-300 mb-2" style="font-family: 'Playfair Display', serif;">Add New Area</h4>

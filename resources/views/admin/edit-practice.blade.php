@@ -2,13 +2,13 @@
     <x-slot name="header">Edit Practice Area: {{ $service->title }}</x-slot>
 
     <div class="max-w-4xl mx-auto" x-data="{ selectedIcon: '{{ $service->icon }}' }">
-        <div class="bg-white rounded-[40px] p-10 shadow-sm border border-gray-50">
+        <div class="bg-white rounded-2xl p-10 shadow-sm border border-gray-50">
             <div class="flex items-center justify-between mb-10">
                 <div>
-                    <h3 class="text-2xl font-bold text-[#1b2559]" style="font-family: 'Playfair Display', serif;">Edit Practice Area</h3>
+                    <h3 class="text-2xl font-bold text-[#151515]" style="font-family: 'Playfair Display', serif;">Edit Practice Area</h3>
                     <p class="text-gray-400 text-sm font-light mt-1">Update your legal service description and branding.</p>
                 </div>
-                <a href="{{ route('admin.practices') }}" class="text-[#18c596] text-xs font-bold uppercase tracking-widest hover:underline flex items-center gap-2">
+                <a href="{{ route('admin.practices') }}" class="text-[#cda151] text-xs font-bold uppercase tracking-widest hover:underline flex items-center gap-2">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                     Back to List
                 </a>
@@ -21,14 +21,14 @@
                 <!-- Title -->
                 <div class="space-y-2">
                     <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Area Title</label>
-                    <input type="text" name="title" value="{{ old('title', $service->title) }}" class="w-full bg-[#f4f7fe] border-none text-[#1b2559] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#18c596] transition-all text-sm font-medium">
+                    <input type="text" name="title" value="{{ old('title', $service->title) }}" class="w-full bg-[#FAF8F5] border-none text-[#151515] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#cda151] transition-all text-sm font-medium">
                     @error('title') <p class="text-red-500 text-[10px] font-bold uppercase mt-1">{{ $message }}</p> @enderror
                 </div>
 
                 <!-- Description -->
                 <div class="space-y-2">
                     <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Description</label>
-                    <textarea name="description" rows="4" class="w-full bg-[#f4f7fe] border-none text-[#1b2559] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#18c596] transition-all text-sm font-medium leading-relaxed">{{ old('description', $service->description) }}</textarea>
+                    <textarea name="description" rows="4" class="w-full bg-[#FAF8F5] border-none text-[#151515] px-6 py-4 rounded-2xl focus:ring-1 focus:ring-[#cda151] transition-all text-sm font-medium leading-relaxed">{{ old('description', $service->description) }}</textarea>
                     @error('description') <p class="text-red-500 text-[10px] font-bold uppercase mt-1">{{ $message }}</p> @enderror
                 </div>
 
@@ -59,7 +59,7 @@
                             ];
                         @endphp
                         @foreach($icons as $icon)
-                        <button type="button" @click="selectedIcon = '{{ $icon }}'" class="p-4 rounded-2xl flex items-center justify-center transition-all border-2" :class="selectedIcon === '{{ $icon }}' ? 'bg-[#18c596] border-[#18c596] text-white' : 'bg-[#f4f7fe] border-transparent text-[#1b2559] hover:bg-gray-100'">
+                        <button type="button" @click="selectedIcon = '{{ $icon }}'" class="p-4 rounded-2xl flex items-center justify-center transition-all border-2" :class="selectedIcon === '{{ $icon }}' ? 'bg-[#cda151] border-[#cda151] text-white' : 'bg-[#FAF8F5] border-transparent text-[#151515] hover:bg-gray-100'">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $iconPaths[$icon] }}"></path></svg>
                         </button>
                         @endforeach
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="flex justify-end pt-4">
-                    <button type="submit" class="bg-[#1b2559] hover:bg-[#0b1437] text-white px-12 py-5 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all shadow-xl shadow-[#0b1437]/20">
+                    <button type="submit" class="bg-[#151515] hover:bg-[#151515] text-white px-12 py-5 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all shadow-xl shadow-[#151515]/20">
                         Update Area
                     </button>
                 </div>

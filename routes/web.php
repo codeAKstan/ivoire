@@ -54,6 +54,7 @@ Route::middleware([
 });
 
 Route::view('/about', 'about')->name('about');
+Route::view('/industries', 'industries')->name('industries');
 Route::get('/services', [ServiceController::class, 'publicIndex'])->name('services');
 Route::redirect('/practice-areas', '/services');
 Route::get('/resources', [PostController::class, 'publicIndex'])->name('resources');
@@ -61,4 +62,17 @@ Route::get('/resources/{slug}', [PostController::class, 'show'])->name('posts.sh
 Route::post('/resources/{post}/comments', [CommentController::class, 'store'])->name('comments.store');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/schedule', 'contact')->name('schedule'); // Reusing contact for now as a fallback
+
+Route::view('/careers', 'careers')->name('careers');
+Route::post('/careers', function (\Illuminate\Http\Request $request) {
+    $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email|max:255',
+        'role' => 'required|string|max:255',
+        'resume_url' => 'required|url',
+        'message' => 'required|string',
+    ]);
+    return redirect()->back()->with('success', 'Your application for the ' . $request->role . ' position has been received. Our team will review it and get in touch.');
+})->name('careers.apply');
+
 
