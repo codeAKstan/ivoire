@@ -54,8 +54,8 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Latest Comments -->
-            <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-gray-50 overflow-hidden">
+            <!-- Recent Activity / Latest Comments (Spanning Full Width) -->
+            <div class="lg:col-span-3 bg-white rounded-2xl shadow-sm border border-gray-50 overflow-hidden">
                 <div class="p-8 border-b border-gray-50 flex items-center justify-between">
                     <h3 class="text-lg font-bold text-[#151515]">Recent Activity</h3>
                     <a href="{{ route('admin.comments') }}" class="text-[10px] font-bold uppercase tracking-widest text-[#cda151] hover:underline">View All</a>
@@ -90,37 +90,6 @@
                     @empty
                     <div class="p-12 text-center text-gray-400 text-sm font-light italic">No recent activity.</div>
                     @endforelse
-                </div>
-            </div>
-
-            <!-- Quick Tips / System Info -->
-            <div class="bg-gradient-to-br from-[#151515] to-[#151515] rounded-2xl p-10 text-white flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">Admin <span class="italic text-[#cda151]">Pro Tip</span></h3>
-                    <div class="space-y-6">
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-[#cda151] flex-shrink-0">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                            </div>
-                            <p class="text-xs text-white/60 leading-relaxed">Regularly update your **Practice Areas** to reflect your firm's evolving expertise.</p>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-[#cda151] flex-shrink-0">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                            </div>
-                            <p class="text-xs text-white/60 leading-relaxed">Engage with contributors in the **Discussion** section to boost authority.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-12 pt-8 border-t border-white/5">
-                    <p class="text-[10px] font-bold uppercase tracking-widest text-white/20 mb-4">Storage Usage</p>
-                    <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                        <div class="h-full bg-[#cda151] w-1/4"></div>
-                    </div>
-                    <div class="flex justify-between mt-2">
-                        <span class="text-[8px] text-white/40 font-bold uppercase">Optimal</span>
-                        <span class="text-[8px] text-white/40 font-bold uppercase">25% Capacity</span>
-                    </div>
                 </div>
             </div>
         </div>

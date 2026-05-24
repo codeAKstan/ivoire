@@ -32,10 +32,18 @@
     <body class="font-['Inter'] antialiased bg-[#FAF8F5] text-[#151515]">
         <x-banner />
 
-        <div class="flex h-screen overflow-hidden" x-data="{ sidebarOpen: true }">
+        <div class="flex h-screen overflow-hidden" x-data="{ sidebarOpen: window.innerWidth >= 768 }">
+            <!-- Mobile Sidebar Backdrop Overlay -->
+            <div 
+                x-show="sidebarOpen" 
+                x-cloak
+                @click="sidebarOpen = false" 
+                class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 md:hidden transition-opacity duration-300"
+            ></div>
+
             <!-- Sidebar -->
             <aside 
-                class="bg-[#151515] text-white w-72 flex-shrink-0 transition-all duration-300 relative z-50 overflow-y-auto"
+                class="bg-[#151515] text-white w-72 flex-shrink-0 transition-all duration-300 fixed md:relative h-screen md:h-auto z-50 overflow-y-auto"
                 :class="sidebarOpen ? 'ml-0' : '-ml-72 md:ml-0 md:w-20'"
             >
                 <!-- Sidebar Header -->
@@ -117,48 +125,55 @@
             <!-- Main Content Area -->
             <div class="flex-1 flex flex-col min-w-0 overflow-hidden">
                 <!-- Top Header -->
-                <header class="bg-white/80 backdrop-blur-md h-20 flex items-center justify-between px-8 border-b border-gray-100 flex-shrink-0">
-                    <div>
-                        <h2 class="text-xl font-bold text-[#151515]" style="font-family: 'Playfair Display', serif;">
-                            {{ $header ?? 'Dashboard' }}
-                        </h2>
-                        <nav class="flex text-[10px] text-gray-400 uppercase tracking-widest mt-1">
-                            <a href="/" class="hover:text-[#cda151]">Home</a>
-                            <span class="mx-2">&raquo;</span>
-                            <span class="text-[#cda151] font-bold">{{ $header ?? 'Dashboard' }}</span>
-                        </nav>
-                    </div>
+                <header class="bg-white/80 backdrop-blur-md h-20 flex items-center justify-between px-4 md:px-8 border-b border-gray-100 flex-shrink-0">
+                    <div class="flex items-center gap-3 md:gap-4">
+                        <!-- Sidebar Toggle Button -->
+                        <button @click="sidebarOpen = !sidebarOpen" class="text-gray-500 hover:text-[#cda151] transition-colors p-2 rounded-xl hover:bg-gray-50 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </button>
 
-                    <div class="flex items-center gap-6">
-                        <!-- Search Bar -->
-                        <div class="relative hidden lg:block">
-                            <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-gray-400">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                            </span>
-                            <input type="text" class="bg-[#FAF8F5] border-none rounded-full pl-10 pr-4 py-2 text-xs w-64 focus:ring-1 focus:ring-[#cda151]" placeholder="Search...">
-                        </div>
-
-                        <!-- Icons -->
-                        <div class="flex items-center gap-4 text-gray-400">
-                            <button class="hover:text-[#cda151] transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></button>
-                            <button class="hover:text-[#cda151] transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button>
-                        </div>
-
-                        <!-- User Profile -->
-                        <div class="flex items-center gap-3 pl-6 border-l border-gray-100">
-                            <div class="text-right hidden sm:block">
-                                <p class="text-xs font-bold text-[#151515]">{{ Auth::user()->name }}</p>
-                                <p class="text-[10px] text-gray-400 uppercase tracking-widest">Administrator</p>
-                            </div>
-                            <div class="w-10 h-10 bg-gradient-to-tr from-[#cda151] to-[#151515] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                                {{ substr(Auth::user()->name, 0, 1) }}
-                            </div>
-                        </div>
-                    </div>
+                        <div>
+                            <h2 class="text-lg md:text-xl font-bold text-[#151515]" style="font-family: 'Playfair Display', serif;">
+                                {{ $header ?? 'Dashboard' }}
+                              </h2>
+                              <nav class="hidden sm:flex text-[10px] text-gray-400 uppercase tracking-widest mt-1">
+                                  <a href="/" class="hover:text-[#cda151]">Home</a>
+                                  <span class="mx-2">&raquo;</span>
+                                  <span class="text-[#cda151] font-bold">{{ $header ?? 'Dashboard' }}</span>
+                              </nav>
+                          </div>
+                      </div>
+  
+                      <div class="flex items-center gap-4 md:gap-6">
+                          <!-- Search Bar -->
+                          <div class="relative hidden lg:block">
+                              <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-gray-400">
+                                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                              </span>
+                              <input type="text" class="bg-[#FAF8F5] border-none rounded-full pl-10 pr-4 py-2 text-xs w-64 focus:ring-1 focus:ring-[#cda151]" placeholder="Search...">
+                          </div>
+  
+                          <!-- Icons -->
+                          <div class="flex items-center gap-3 md:gap-4 text-gray-400">
+                              <button class="hover:text-[#cda151] transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></button>
+                              <button class="hover:text-[#cda151] transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button>
+                          </div>
+  
+                          <!-- User Profile -->
+                          <div class="flex items-center gap-3 pl-4 md:pl-6 border-l border-gray-100">
+                              <div class="text-right hidden sm:block">
+                                  <p class="text-xs font-bold text-[#151515]">{{ Auth::user()->name }}</p>
+                                  <p class="text-[10px] text-gray-400 uppercase tracking-widest">Administrator</p>
+                              </div>
+                              <div class="w-9 h-9 md:w-10 md:h-10 bg-gradient-to-tr from-[#cda151] to-[#151515] rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold text-sm">
+                                  {{ substr(Auth::user()->name, 0, 1) }}
+                              </div>
+                          </div>
+                      </div>
                 </header>
 
                 <!-- Page Content -->
-                <main class="flex-1 overflow-y-auto p-8">
+                <main class="flex-1 overflow-y-auto p-4 md:p-8">
                     {{ $slot }}
                 </main>
             </div>
