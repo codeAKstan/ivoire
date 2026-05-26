@@ -35,7 +35,7 @@
                     </p>
 
                     <div class="opacity-0 animate-[fadeInUp_1s_ease-out_0.9s_forwards]">
-                        <a href="/contact" class="inline-flex items-center gap-2 bg-[#0a0a2e] hover:bg-[#a37f40] text-white px-8 py-4 text-xs font-bold uppercase tracking-widest transition-all duration-300">
+                        <a href="/contact" class="inline-flex items-center gap-2 bg-[#cda151] hover:bg-[#b88f40] text-white px-8 py-4 text-xs font-bold uppercase tracking-widest transition-all duration-300">
                             Get Started
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

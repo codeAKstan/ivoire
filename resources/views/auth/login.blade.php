@@ -11,7 +11,7 @@
             <!-- Logo Area -->
             <div class="text-center mb-12">
                 <a href="/">
-                    <img src="{{ asset('assets/img/ivoire-legal-logo.png') }}" class="h-12 mx-auto brightness-0 invert mb-6" alt="Ivoire Advisory">
+                    <img src="{{ asset('assets/img/ivoire-legal-logo-inline-dark.png') }}" class="h-12 mx-auto object-contain mb-6" alt="Ivoire Advisory">
                 </a>
                 <h1 class="text-3xl font-light text-white tracking-tight" style="font-family: 'Playfair Display', serif;">
                     Welcome <span class="text-[#cda151] italic font-serif">Back</span>

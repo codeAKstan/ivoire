@@ -15,7 +15,7 @@
             <section class="relative min-h-[70vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
                 <!-- Background Image with Overlay -->
                 <div class="absolute inset-0 z-0">
-                    <img src="{{ asset('assets/img/practices.webp') }}" alt="Services Hero" class="w-full h-full object-cover">
+                    <img src="{{ asset('assets/img/consult.webp') }}" alt="Services Hero" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/90 via-[#0a0a0a]/70 to-[#0a0a0a]"></div>
                 </div>
 

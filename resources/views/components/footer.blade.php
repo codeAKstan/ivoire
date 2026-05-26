@@ -4,7 +4,7 @@
             <!-- Logo & Description Section -->
             <div class="col-span-1">
                 <a href="/" class="flex items-center space-x-3 group mb-6">
-                    <img src="{{ asset('assets/img/ivoire-legal-logo.png') }}" alt="Ivoire Advisory Logo" class="h-9 w-auto object-contain brightness-0 invert transition-transform duration-500 group-hover:scale-105">
+                    <img src="{{ asset('assets/img/ivoire-legal-logo-inline-dark.png') }}" alt="Ivoire Advisory Logo" class="h-9 w-auto object-contain transition-transform duration-500 group-hover:scale-105">
                 </a>
                 <p class="text-white/40 text-sm leading-relaxed max-w-xs font-light">
                     The legal and compliance partner for Africa's technology companies.

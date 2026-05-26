@@ -1,4 +1,4 @@
-<section class="py-24 bg-[#FAF8F5] relative overflow-hidden border-b border-gray-100">
+<section id="plans" class="py-24 bg-[#FAF8F5] relative overflow-hidden border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <!-- Header -->
         <div class="max-w-3xl mb-20 text-center mx-auto">
@@ -6,7 +6,7 @@
                 Pricing Plans
             </span>
             <h2 class="text-[#151515] text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-6 leading-[1.1]" style="font-family: 'Playfair Display', serif;">
-                Transparent. Predictable. <br>No hourly <span class="text-[#cda151] italic font-serif">billing.</span>
+                Transparent. Predictable.
             </h2>
             <p class="text-gray-500 text-base sm:text-lg leading-relaxed max-w-2xl font-light mx-auto">
                 Choose the tier that matches your company's stage. Switch, scale, or cancel at any time.
@@ -125,7 +125,7 @@
                         </li>
                         <li class="flex items-center space-x-3 text-sm text-gray-500 font-light">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#cda151]"></span>
-                            <span>Senior cousel supervision</span>
+                            <span>Senior counsel supervision</span>
                         </li>
                         <li class="flex items-center space-x-3 text-sm text-gray-500 font-light">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#cda151]"></span>

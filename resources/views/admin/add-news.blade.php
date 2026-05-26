@@ -14,7 +14,7 @@
                 </a>
             </div>
 
-            <form action="{{ route('admin.news.store') }}" method="POST" enctype="multipart/form-data" class="space-y-8">
+            <form id="publication-form" action="{{ route('admin.news.store') }}" method="POST" enctype="multipart/form-data" class="space-y-8">
                 @csrf
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -58,9 +58,80 @@
                 <!-- Content -->
                 <div class="space-y-2">
                     <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Content</label>
-                    <textarea name="content" rows="12" placeholder="Write your publication here..." class="w-full bg-[#FAF8F5] border-none text-[#151515] px-8 py-6 rounded-[30px] focus:ring-1 focus:ring-[#cda151] transition-all text-sm font-medium leading-relaxed">{{ old('content') }}</textarea>
+                    
+                    <!-- Quill stylesheet -->
+                    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+                    
+                    <!-- Editor Container -->
+                    <div class="w-full bg-[#FAF8F5] rounded-[30px] overflow-hidden border border-gray-100 transition-all focus-within:ring-1 focus-within:ring-[#cda151] focus-within:border-[#cda151]">
+                        <div id="editor">
+                            {!! old('content') !!}
+                        </div>
+                    </div>
+                    
+                    <!-- Hidden Textarea for form submission -->
+                    <textarea name="content" id="content-textarea" class="hidden">{{ old('content') }}</textarea>
                     @error('content') <p class="text-red-500 text-[10px] font-bold uppercase mt-1">{{ $message }}</p> @enderror
                 </div>
+
+                <!-- Quill Script & Style -->
+                <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+                <style>
+                    .ql-toolbar.ql-snow {
+                        border: none !important;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+                        background: #FAF8F5 !important;
+                        padding: 16px 24px !important;
+                    }
+                    .ql-container.ql-snow {
+                        border: none !important;
+                        background: #FAF8F5 !important;
+                        font-family: 'Inter', sans-serif !important;
+                    }
+                    .ql-editor {
+                        min-height: 350px !important;
+                        font-size: 0.875rem !important; /* text-sm */
+                        color: #151515 !important;
+                        padding: 24px !important;
+                        line-height: 1.7 !important;
+                    }
+                    .ql-editor.ql-blank::before {
+                        left: 24px !important;
+                        color: #9ca3af !important;
+                        font-style: normal !important;
+                        opacity: 0.6 !important;
+                    }
+                </style>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const quill = new Quill('#editor', {
+                            theme: 'snow',
+                            placeholder: 'Write your publication here...',
+                            modules: {
+                                toolbar: [
+                                    [{ 'header': [1, 2, 3, false] }],
+                                    ['bold', 'italic', 'underline', 'strike'],
+                                    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                                    ['link', 'blockquote', 'code-block'],
+                                    ['clean']
+                                ]
+                            }
+                        });
+
+                        // Sync HTML with hidden textarea in real-time and on submit
+                        const form = document.getElementById('publication-form');
+                        
+                        quill.on('text-change', function() {
+                            const textarea = document.getElementById('content-textarea');
+                            textarea.value = quill.root.innerHTML;
+                        });
+
+                        form.addEventListener('submit', function() {
+                            const textarea = document.getElementById('content-textarea');
+                            textarea.value = quill.root.innerHTML;
+                        });
+                    });
+                </script>
 
                 <div class="flex justify-end pt-4">
                     <button type="submit" class="bg-[#151515] hover:bg-[#151515] text-white px-12 py-5 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all shadow-xl shadow-[#151515]/20">

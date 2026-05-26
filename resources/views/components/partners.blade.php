@@ -17,12 +17,12 @@
                     @for ($j = 0; $j < 3; $j++)
                         <div class="flex space-x-16 shrink-0 items-center">
                             @foreach($activePartners as $partner)
-                                <div class="flex items-center space-x-2 grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                                <div class="flex items-center space-x-2 opacity-100 hover:scale-105 transition-all duration-300">
                                     @if(Str::contains($partner->logo, 'partners/'))
-                                        <img src="{{ asset('storage/' . $partner->logo) }}" alt="{{ $partner->name }}" class="h-8 w-auto object-contain max-w-[120px]">
+                                        <img src="{{ asset('storage/' . $partner->logo) }}" alt="{{ $partner->name }}" class="h-12 w-auto object-contain max-w-[160px]">
                                     @else
                                         <!-- Fallback to styled text if logo missing/corrupt -->
-                                        <span class="text-sm font-black tracking-wide text-gray-500">{{ $partner->name }}</span>
+                                        <span class="text-lg font-black tracking-wide text-gray-800">{{ $partner->name }}</span>
                                     @endif
                                 </div>
                             @endforeach
@@ -33,37 +33,37 @@
                     @for ($j = 0; $j < 4; $j++)
                         <div class="flex space-x-16 shrink-0 items-center">
                             <!-- Blakskill -->
-                            <div class="flex items-center space-x-2 grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <span class="text-base font-black tracking-tighter text-gray-800" style="font-family: 'Playfair Display', serif;">Blakskill</span>
+                            <div class="flex items-center space-x-2 opacity-100 hover:scale-105 transition-all duration-300">
+                                <span class="text-xl font-black tracking-tighter text-gray-900" style="font-family: 'Playfair Display', serif;">Blakskill</span>
                             </div>
                             <!-- Drug-IT -->
-                            <div class="flex items-center space-x-2 grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <span class="text-base font-bold text-gray-800 tracking-tight">Drug-IT</span>
+                            <div class="flex items-center space-x-2 opacity-100 hover:scale-105 transition-all duration-300">
+                                <span class="text-xl font-bold text-gray-900 tracking-tight">Drug-IT</span>
                             </div>
                             <!-- MATRIX-36 -->
-                            <div class="flex items-center space-x-1 grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <span class="text-base font-black text-gray-850 tracking-widest uppercase">Matrix-36</span>
+                            <div class="flex items-center space-x-1 opacity-100 hover:scale-105 transition-all duration-300">
+                                <span class="text-xl font-black text-gray-950 tracking-widest uppercase">Matrix-36</span>
                             </div>
                             <!-- on.us -->
-                            <div class="flex items-center space-x-1 grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <span class="text-base font-light text-gray-600">on.</span>
-                                <span class="text-base font-black text-gray-800">us</span>
+                            <div class="flex items-center space-x-1 opacity-100 hover:scale-105 transition-all duration-300">
+                                <span class="text-xl font-semibold text-gray-800">on.</span>
+                                <span class="text-xl font-black text-gray-950">us</span>
                             </div>
                             <!-- BudPay -->
-                            <div class="flex items-center space-x-1 grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <span class="text-base font-black text-gray-900 tracking-tight">BudPay</span>
+                            <div class="flex items-center space-x-1 opacity-100 hover:scale-105 transition-all duration-300">
+                                <span class="text-xl font-black text-black tracking-tight">BudPay</span>
                             </div>
                             <!-- Paylode -->
-                            <div class="flex items-center space-x-1 grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <span class="text-base font-semibold text-gray-850 tracking-tight">Paylode</span>
+                            <div class="flex items-center space-x-1 opacity-100 hover:scale-105 transition-all duration-300">
+                                <span class="text-lg font-semibold text-gray-950 tracking-tight">Paylode</span>
                             </div>
                             <!-- Conglex -->
-                            <div class="flex items-center space-x-1 grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <span class="text-base font-bold text-gray-800 italic" style="font-family: 'Playfair Display', serif;">Conglex</span>
+                            <div class="flex items-center space-x-1 opacity-100 hover:scale-105 transition-all duration-300">
+                                <span class="text-xl font-bold text-gray-900 italic" style="font-family: 'Playfair Display', serif;">Conglex</span>
                             </div>
                             <!-- BRB Capital -->
-                            <div class="flex items-center space-x-1 grayscale opacity-55 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <span class="text-xs font-bold tracking-widest uppercase text-gray-700">BRB Capital</span>
+                            <div class="flex items-center space-x-1 opacity-100 hover:scale-105 transition-all duration-300">
+                                <span class="text-sm font-bold tracking-widest uppercase text-gray-900">BRB Capital</span>
                             </div>
                         </div>
                     @endfor

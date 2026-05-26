@@ -324,7 +324,7 @@
                                 <span class="text-xs font-bold tracking-[0.3em] uppercase text-[#cda151]">Pan-African Reach</span>
                             </div>
                             <h2 class="text-white text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-8 leading-[1.1]" style="font-family: 'Playfair Display', serif;">
-                                Nigeria expertise. <br>
+                                Nigerian expertise. <br>
                                 <span class="text-[#cda151] italic font-serif">Continental reach.</span>
                             </h2>
                             <p class="text-white/60 text-base sm:text-lg leading-relaxed font-light mb-8 max-w-xl">

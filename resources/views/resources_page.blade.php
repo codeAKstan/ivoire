@@ -19,8 +19,8 @@
                         <span class="text-xs font-bold tracking-[0.3em] uppercase text-[#cda151]">Knowledge Hub</span>
                     </div>
                     
-                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-light text-[#1a365d] leading-tight mb-10 tracking-tight" style="font-family: 'Playfair Display', serif;">
-                        Insights for the <span class="italic">Digital Economy.</span>
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-light text-[#151515] leading-tight mb-10 tracking-tight" style="font-family: 'Playfair Display', serif;">
+                        Insights for the <span class="italic text-[#cda151]">Digital Economy.</span>
                     </h1>
 
                     <div class="max-w-2xl">
@@ -31,11 +31,11 @@
 
                     <!-- Category Filters -->
                     <div class="flex flex-wrap items-center gap-4">
-                        <a href="{{ route('resources') }}" class="px-8 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all {{ !request('category') ? 'bg-[#1a365d] text-white shadow-xl shadow-[#1a365d]/20' : 'bg-white text-gray-400 border border-gray-100 hover:border-[#1a365d]/20 hover:text-[#1a365d]' }}">
+                        <a href="{{ route('resources') }}" class="px-8 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all {{ !request('category') ? 'bg-[#151515] text-white shadow-xl shadow-[#151515]/10' : 'bg-white text-gray-500 border border-gray-100 hover:border-[#cda151]/30 hover:text-[#cda151]' }}">
                             All Insights
                         </a>
                         @foreach(['Regulatory Alert', 'Insights', 'Toolkits', 'Case Studies'] as $cat)
-                        <a href="{{ route('resources', ['category' => $cat]) }}" class="px-8 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all {{ request('category') == $cat ? 'bg-[#1a365d] text-white shadow-xl shadow-[#1a365d]/20' : 'bg-white text-gray-400 border border-gray-100 hover:border-[#1a365d]/20 hover:text-[#1a365d]' }}">
+                        <a href="{{ route('resources', ['category' => $cat]) }}" class="px-8 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all {{ request('category') == $cat ? 'bg-[#151515] text-white shadow-xl shadow-[#151515]/10' : 'bg-white text-gray-500 border border-gray-100 hover:border-[#cda151]/30 hover:text-[#cda151]' }}">
                             {{ $cat }}
                         </a>
                         @endforeach
@@ -61,11 +61,20 @@
             /* Custom styles for light header on this page */
             #main-header {
                 background: rgba(250, 250, 250, 0.8) !important;
-                backdrop-blur: xl !important;
+                backdrop-filter: blur(12px) !important;
             }
             #main-header a, #main-header button {
-                color: #1a365d !important;
-                border-color: rgba(26, 54, 93, 0.1) !important;
+                color: #151515 !important;
+            }
+            #main-header a:hover, #main-header button:hover {
+                color: #cda151 !important;
+            }
+            /* Exclude Book a Call button from the black text color override */
+            #main-header a.bg-\[\#151515\] {
+                color: #ffffff !important;
+            }
+            #main-header a.bg-\[\#151515\]:hover {
+                color: #ffffff !important;
             }
             #main-header img {
                 filter: none !important;

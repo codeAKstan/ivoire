@@ -8,7 +8,7 @@
                 How We Work
             </span>
             <h2 class="text-white text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-6 leading-[1.1]" style="font-family: 'Playfair Display', serif;">
-                Discover.Embed <span class="text-[#cda151] italic font-serif">Deliver.</span>
+                Discover.Embed.<span class="text-[#cda151] italic font-serif">Deliver.</span>
             </h2>
             <p class="text-white/60 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
                 Most clients have a clear legal roadmap and running embeded engagement within two to three weeks
