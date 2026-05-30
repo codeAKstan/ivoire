@@ -6,6 +6,7 @@ use App\Http\Controllers\SocialAccountController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\TestimonialController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -51,6 +52,12 @@ Route::middleware([
     Route::get('/admin/settings', [SocialAccountController::class, 'settings'])->name('admin.settings');
     Route::post('/admin/settings/social', [SocialAccountController::class, 'store'])->name('admin.settings.social.store');
     Route::put('/admin/settings/social/{socialAccount}', [SocialAccountController::class, 'update'])->name('admin.settings.social.update');
+
+    Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('admin.testimonials');
+    Route::get('/admin/testimonials/{testimonial}/edit', [TestimonialController::class, 'edit'])->name('admin.testimonials.edit');
+    Route::post('/admin/testimonials', [TestimonialController::class, 'store'])->name('admin.testimonials.store');
+    Route::put('/admin/testimonials/{testimonial}', [TestimonialController::class, 'update'])->name('admin.testimonials.update');
+    Route::delete('/admin/testimonials/{testimonial}', [TestimonialController::class, 'destroy'])->name('admin.testimonials.destroy');
 });
 
 Route::view('/about', 'about')->name('about');

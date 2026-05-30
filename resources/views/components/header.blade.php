@@ -3,7 +3,7 @@
         <!-- Logo Section -->
         <a href="/" class="flex items-center space-x-3 group">
             <div class="relative flex items-center space-x-3">
-                <img src="{{ asset('assets/img/ivoire-legal-logo.png') }}" alt="Ivoire Advisory Logo" class="h-9 w-auto object-contain transition-transform duration-500 group-hover:scale-105">
+                <img src="{{ asset('assets/img/ivoire-legal-logo.png') }}" alt="Ivoire Advisory Logo" class="h-14 w-auto object-contain transition-transform duration-500 group-hover:scale-105">
             </div>
         </a>
 

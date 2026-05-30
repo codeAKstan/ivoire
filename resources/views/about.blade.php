@@ -52,64 +52,87 @@
                 <!-- Section Background -->
                 <div class="absolute inset-0 z-0">
                     <img src="{{ asset('assets/img/how.jpg') }}" alt="Operation Background" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-[#0a0a0a]/90"></div>
+                    <div class="absolute inset-0 bg-[#0a0a0a]/95"></div>
                 </div>
 
                 <div class="relative z-10 max-w-7xl mx-auto">
-                    <div class="text-center mb-32">
+                    <div class="text-center mb-20">
                         <h2 class="text-4xl md:text-6xl font-light mb-6 tracking-tight" style="font-family: 'Playfair Display', serif;">How we <span class="italic text-[#cda151]">operate</span></h2>
                         <div class="h-[1px] w-24 bg-[#cda151]/50 mx-auto"></div>
                     </div>
 
-                    <div class="relative min-h-[800px] md:min-h-[600px]">
-                        <!-- Diamond Grid Container -->
-                        <div class="grid grid-cols-1 md:grid-cols-4 gap-20 md:gap-4 relative">
+                    <!-- Premium 4-Column Rectangular Card Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        
+                        <!-- Item 1: Execution -->
+                        <div class="group relative bg-[#111111] border border-white/5 hover:border-[#cda151]/30 p-10 rounded-[32px] transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col justify-between min-h-[320px]">
+                            <!-- Ambient Glow on hover -->
+                            <div class="absolute inset-0 bg-gradient-to-tr from-[#cda151]/0 via-[#cda151]/0 to-[#cda151]/5 rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             
-                            <!-- Item 1: Execution -->
-                            <div class="group relative flex flex-col items-center justify-center transition-all duration-700 hover:-translate-y-4">
-                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#cda151]/5 border border-[#cda151]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#cda151]/10 group-hover:border-[#cda151]/40"></div>
-                                <div class="relative z-10 text-center p-12 max-w-[240px]">
-                                    <h3 class="text-2xl md:text-3xl font-medium mb-4 text-white" style="font-family: 'Playfair Display', serif;">Execution</h3>
-                                    <p class="text-sm text-white/50 leading-relaxed font-light">
-                                        We don't just tell you what to do. We do it. Every engagement produces implemented systems, not just memos.
-                                    </p>
+                            <div class="relative z-10">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span class="text-xs font-bold tracking-[0.2em] text-[#cda151]/60 uppercase">01</span>
+                                    <div class="w-8 h-[1px] bg-[#cda151] opacity-40 group-hover:opacity-100 group-hover:w-16 transition-all duration-500"></div>
                                 </div>
+                                
+                                <h3 class="text-2xl font-light text-white mb-4" style="font-family: 'Playfair Display', serif;">Execution</h3>
+                                <p class="text-sm text-white/50 leading-relaxed font-light">
+                                    We don't just tell you what to do. We do it. Every engagement produces implemented systems, not just memos.
+                                </p>
                             </div>
-
-                            <!-- Item 2: Proactive -->
-                            <div class="group relative flex flex-col items-center justify-center transition-all duration-700 hover:-translate-y-4 md:mt-40">
-                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#cda151]/5 border border-[#cda151]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#cda151]/10 group-hover:border-[#cda151]/40"></div>
-                                <div class="relative z-10 text-center p-12 max-w-[240px]">
-                                    <h3 class="text-2xl md:text-3xl font-medium mb-4 text-white" style="font-family: 'Playfair Display', serif;">Proactive</h3>
-                                    <p class="text-sm text-white/50 leading-relaxed font-light">
-                                        We monitor regulatory changes and flag issues before they become problems. Clients shouldn't have to ask.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Item 3: Commercial -->
-                            <div class="group relative flex flex-col items-center justify-center transition-all duration-700 hover:-translate-y-4">
-                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#cda151]/5 border border-[#cda151]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#cda151]/10 group-hover:border-[#cda151]/40"></div>
-                                <div class="relative z-10 text-center p-12 max-w-[240px]">
-                                    <h3 class="text-2xl md:text-3xl font-medium mb-4 text-white" style="font-family: 'Playfair Display', serif;">Commercial</h3>
-                                    <p class="text-sm text-white/50 leading-relaxed font-light">
-                                        We understand your model, investors, and market, so our work supports growth, not just compliance.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Item 4: Quality -->
-                            <div class="group relative flex flex-col items-center justify-center transition-all duration-700 hover:-translate-y-4 md:mt-40">
-                                <div class="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-[#cda151]/5 border border-[#cda151]/20 rotate-45 rounded-[40px] transition-all duration-700 group-hover:bg-[#cda151]/10 group-hover:border-[#cda151]/40"></div>
-                                <div class="relative z-10 text-center p-12 max-w-[240px]">
-                                    <h3 class="text-2xl md:text-3xl font-medium mb-4 text-white" style="font-family: 'Playfair Display', serif;">Quality</h3>
-                                    <p class="text-sm text-white/50 leading-relaxed font-light">
-                                        All work is supervised by senior counsel and follows standardised workflows for consistent, quality output.
-                                    </p>
-                                </div>
-                            </div>
-
                         </div>
+
+                        <!-- Item 2: Proactive -->
+                        <div class="group relative bg-[#111111] border border-white/5 hover:border-[#cda151]/30 p-10 rounded-[32px] transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col justify-between min-h-[320px]">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-[#cda151]/0 via-[#cda151]/0 to-[#cda151]/5 rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            
+                            <div class="relative z-10">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span class="text-xs font-bold tracking-[0.2em] text-[#cda151]/60 uppercase">02</span>
+                                    <div class="w-8 h-[1px] bg-[#cda151] opacity-40 group-hover:opacity-100 group-hover:w-16 transition-all duration-500"></div>
+                                </div>
+                                
+                                <h3 class="text-2xl font-light text-white mb-4" style="font-family: 'Playfair Display', serif;">Proactive</h3>
+                                <p class="text-sm text-white/50 leading-relaxed font-light">
+                                    We monitor regulatory changes and flag issues before they become problems. Clients shouldn't have to ask.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: Commercial -->
+                        <div class="group relative bg-[#111111] border border-white/5 hover:border-[#cda151]/30 p-10 rounded-[32px] transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col justify-between min-h-[320px]">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-[#cda151]/0 via-[#cda151]/0 to-[#cda151]/5 rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            
+                            <div class="relative z-10">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span class="text-xs font-bold tracking-[0.2em] text-[#cda151]/60 uppercase">03</span>
+                                    <div class="w-8 h-[1px] bg-[#cda151] opacity-40 group-hover:opacity-100 group-hover:w-16 transition-all duration-500"></div>
+                                </div>
+                                
+                                <h3 class="text-2xl font-light text-white mb-4" style="font-family: 'Playfair Display', serif;">Commercial</h3>
+                                <p class="text-sm text-white/50 leading-relaxed font-light">
+                                    We understand your model, investors, and market, so our work supports growth, not just compliance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Item 4: Quality -->
+                        <div class="group relative bg-[#111111] border border-white/5 hover:border-[#cda151]/30 p-10 rounded-[32px] transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col justify-between min-h-[320px]">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-[#cda151]/0 via-[#cda151]/0 to-[#cda151]/5 rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            
+                            <div class="relative z-10">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span class="text-xs font-bold tracking-[0.2em] text-[#cda151]/60 uppercase">04</span>
+                                    <div class="w-8 h-[1px] bg-[#cda151] opacity-40 group-hover:opacity-100 group-hover:w-16 transition-all duration-500"></div>
+                                </div>
+                                
+                                <h3 class="text-2xl font-light text-white mb-4" style="font-family: 'Playfair Display', serif;">Quality</h3>
+                                <p class="text-sm text-white/50 leading-relaxed font-light">
+                                    All work is supervised by senior counsel and follows standardised workflows for consistent, quality output.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
