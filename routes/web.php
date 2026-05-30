@@ -44,6 +44,7 @@ Route::middleware([
     Route::get('/admin/news/{post}/edit', [PostController::class, 'edit'])->name('admin.news.edit');
     Route::put('/admin/news/{post}', [PostController::class, 'update'])->name('admin.news.update');
     Route::get('/admin/news/create', [PostController::class, 'create'])->name('admin.news.create');
+    Route::post('/admin/news', [PostController::class, 'store'])->name('admin.news.store');
     Route::delete('/admin/news/{post}', [PostController::class, 'destroy'])->name('admin.news.destroy');
 
     Route::get('/admin/comments', [CommentController::class, 'index'])->name('admin.comments');

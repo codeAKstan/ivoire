@@ -6,6 +6,8 @@
         <title>{{ $post->title }} | Ivoire Legal</title>
         <link rel="icon" type="image/png" href="{{ asset('assets/img/logo/favicon.png') }}">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <!-- AlpineJS CDN -->
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
     <body class="bg-white text-[#121212] antialiased">

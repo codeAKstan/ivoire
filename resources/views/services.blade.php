@@ -6,6 +6,8 @@
         <title>{{ config('app.name', 'Ivoire') }} | Services</title>
         <link rel="icon" type="image/png" href="{{ asset('assets/img/logo/favicon.png') }}">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <!-- AlpineJS CDN -->
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     <body class="bg-[#121212] text-white antialiased">
         <x-header />
