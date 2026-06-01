@@ -38,8 +38,22 @@
             <div>
                 <h4 class="text-[#cda151] text-[10px] font-bold tracking-[0.25em] uppercase mb-8">Connect</h4>
                 <ul class="space-y-4">
-                    <li><a href="mailto:info@ivoirelegal.com" class="text-white/40 hover:text-[#cda151] transition-colors duration-300 text-sm font-light">info@ivoirelegal.com</a></li>
-                    <li><a href="https://calendly.com/ivoirelegal" target="_blank" class="text-white/40 hover:text-[#cda151] transition-colors duration-300 text-sm font-light">Book a Consultation</a></li>
+                    <li>
+                        <a href="mailto:info@ivoirelegal.com" class="flex items-center gap-3 text-white/40 hover:text-[#cda151] transition-colors duration-300 text-sm font-light group">
+                            <svg class="w-4 h-4 fill-current text-white/40 group-hover:text-[#cda151] transition-colors duration-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>info@ivoirelegal.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://calendly.com/ivoirelegal" target="_blank" class="flex items-center gap-3 text-white/40 hover:text-[#cda151] transition-colors duration-300 text-sm font-light group">
+                            <svg class="w-4 h-4 fill-current text-white/40 group-hover:text-[#cda151] transition-colors duration-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+                            </svg>
+                            <span>Book a Consultation</span>
+                        </a>
+                    </li>
                     @php
                         $footerSocials = \App\Models\SocialAccount::where('is_active', true)->get();
                     @endphp

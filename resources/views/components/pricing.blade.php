@@ -69,7 +69,7 @@
                         Built for funded technology businesses and scaling teams.
                     </p>
                     <div class="mb-8">
-                        <span class="text-4xl font-extrabold text-[#151515]">~20</span>
+                        <span class="text-4xl font-extrabold text-[#151515]">~20 hrs</span>
                         <span class="text-gray-400 text-sm"> / week</span>
                     </div>
                     <!-- Features -->
@@ -114,7 +114,7 @@
                         A complete outsourced legal function for Series A+ technology companies.
                     </p>
                     <div class="mb-8">
-                        <span class="text-4xl font-extrabold text-[#151515]">~40</span>
+                        <span class="text-4xl font-extrabold text-[#151515]">~40 hrs</span>
                         <span class="text-gray-400 text-sm"> / week</span>
                     </div>
                     <!-- Features -->
