@@ -20,7 +20,7 @@
 
         <!-- Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://calendly.com/ivoirelegal" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-[#cda151] hover:bg-[#b88f40] text-white font-bold text-xs tracking-[0.15em] uppercase transition-all duration-300 rounded-[4px] shadow-lg group">
+            <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-[#cda151] hover:bg-[#b88f40] text-white font-bold text-xs tracking-[0.15em] uppercase transition-all duration-300 rounded-[4px] shadow-lg group">
                 <span>Book a free consultation &rarr;</span>
             </a>
             

@@ -1,14 +1,13 @@
 <section id="plans" class="py-24 bg-[#FAF8F5] relative overflow-hidden border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-        <!-- Header -->
-        <div class="max-w-3xl mb-20 text-center mx-auto">
+        <div class="max-w-none mb-20 text-center mx-auto">
             <span class="text-[10px] font-bold tracking-[0.25em] text-[#cda151] uppercase block mb-4">
                 Pricing Plans
             </span>
             <h2 class="text-[#151515] text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-6 leading-[1.1]" style="font-family: 'Playfair Display', serif;">
                 Transparent. Predictable.
             </h2>
-            <p class="text-gray-500 text-base sm:text-lg leading-relaxed max-w-2xl font-light mx-auto">
+            <p class="text-gray-500 text-base sm:text-lg leading-relaxed max-w-none font-light mx-auto">
                 Choose the tier that matches your company's stage. Switch, scale, or cancel at any time.
             </p>
         </div>
@@ -52,7 +51,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="https://calendly.com/ivoirelegal" target="_blank" class="w-full text-center py-3.5 border border-[#151515] text-[#151515] hover:bg-[#151515] hover:text-white font-bold text-xs tracking-widest uppercase transition-all duration-300 rounded-[4px]">
+                <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="w-full text-center py-3.5 border border-[#151515] text-[#151515] hover:bg-[#151515] hover:text-white font-bold text-xs tracking-widest uppercase transition-all duration-300 rounded-[4px]">
                     Get a quote
                 </a>
             </div>
@@ -100,7 +99,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="https://calendly.com/ivoirelegal" target="_blank" class="w-full text-center py-3.5 bg-[#151515] hover:bg-[#cda151] text-white font-bold text-xs tracking-widest uppercase transition-all duration-300 rounded-[4px] shadow">
+                <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="w-full text-center py-3.5 bg-[#151515] hover:bg-[#cda151] text-white font-bold text-xs tracking-widest uppercase transition-all duration-300 rounded-[4px] shadow">
                     Book a discovery call
                 </a>
             </div>
@@ -141,7 +140,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="https://calendly.com/ivoirelegal" target="_blank" class="w-full text-center py-3.5 border border-[#151515] text-[#151515] hover:bg-[#151515] hover:text-white font-bold text-xs tracking-widest uppercase transition-all duration-300 rounded-[4px]">
+                <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="w-full text-center py-3.5 border border-[#151515] text-[#151515] hover:bg-[#151515] hover:text-white font-bold text-xs tracking-widest uppercase transition-all duration-300 rounded-[4px]">
                     Talk to us
                 </a>
             </div>

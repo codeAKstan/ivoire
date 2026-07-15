@@ -1,14 +1,14 @@
 <section class="py-24 bg-[#FAF8F5] relative overflow-hidden border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <!-- Header -->
-        <div class="max-w-3xl mb-16">
+        <div class="max-w-none mb-16">
             <span class="text-[10px] font-bold tracking-[0.25em] text-[#cda151] uppercase block mb-4">
                 Why Embedded?
             </span>
             <h2 class="text-[#151515] text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-6 leading-[1.1]" style="font-family: 'Playfair Display', serif;">
-                Advisory as a function, <br>not a <span class="text-[#cda151] italic font-serif">favour.</span>
+                Advisory as a function, not a <span class="text-[#cda151] italic font-serif">favour.</span>
             </h2>
-            <p class="text-gray-500 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+            <p class="text-gray-500 text-base sm:text-lg leading-relaxed max-w-none font-light">
                 Traditional external counsel answers questions. We operate as your in-house legal department &mdash; proactively, continuously, and built for the pace of a technology business.
             </p>
         </div>

@@ -3,14 +3,14 @@
 
     <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <!-- Header -->
-        <div class="max-w-3xl mb-20">
+        <div class="max-w-none mb-20">
             <span class="text-[10px] font-bold tracking-[0.25em] text-[#cda151] uppercase block mb-4">
                 How We Work
             </span>
             <h2 class="text-white text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-6 leading-[1.1]" style="font-family: 'Playfair Display', serif;">
                 Discover.Embed.<span class="text-[#cda151] italic font-serif">Deliver.</span>
             </h2>
-            <p class="text-white/60 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+            <p class="text-white/60 text-base sm:text-lg leading-relaxed max-w-none font-light">
                 Most clients have a clear legal roadmap and running embeded engagement within two to three weeks
             </p>
         </div>

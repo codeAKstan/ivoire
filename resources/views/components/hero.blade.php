@@ -1,4 +1,4 @@
-<section class="relative h-screen w-full overflow-hidden flex items-center justify-center bg-[#161616]">
+<section class="relative min-h-screen w-full flex items-center justify-center bg-[#161616] py-20 lg:py-28">
 
     <!-- Premium Background Radial Glows -->
     <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-[#cda151]/[0.04] rounded-full blur-[130px] pointer-events-none z-10"></div>
@@ -6,32 +6,22 @@
 
     <!-- Content -->
     <div class="relative z-20 text-left px-6 lg:px-12 max-w-7xl mx-auto w-full">
-        <div class="grid items-center gap-10 lg:gap-8 lg:grid-cols-[1fr_430px] lg:pt-16">
-            <!-- Left Side -->
-            <div class="max-w-xl">
-                <!-- Badge Pill -->
-                <div class="inline-flex items-center border border-[#cda151]/30 bg-[#cda151]/10 px-3.5 py-1.5 rounded-full mb-6 lg:mb-5 max-w-full animate-slide-up">
-                    <span class="text-[#cda151] text-[9px] sm:text-[10px] lg:text-[11px] font-bold tracking-[0.1em] sm:tracking-[0.2em] uppercase text-center break-words">
-                        &bull; AFRICA &bull; EMBEDDED LEGAL &amp; COMPLIANCE ADVISORY
-                    </span>
-                </div>
-                
+        <div class="flex flex-col gap-12 lg:gap-16 lg:pt-8 w-full">
+            <!-- Top Side (Text Content) -->
+            <div class="w-full max-w-none">
                 <!-- Headline -->
                 <h1 class="text-white text-[28px] sm:text-[36px] md:text-4xl lg:text-[46px] xl:text-[52px] font-normal tracking-tight leading-[1.2] lg:leading-[1.1] mb-6 lg:mb-5 animate-fade-in-up" style="animation-delay: 0.2s; font-family: 'Playfair Display', serif;">
-                    The legal and <br>
-                    compliance partner for <br>
-                    Africa's <span class="text-[#cda151] italic font-serif">technology</span> <br>
-                    <span class="text-[#cda151] italic font-serif">companies.</span>
+                    The legal and compliance partner for Africa's <span class="text-[#cda151] italic font-serif">technology companies.</span>
                 </h1>
 
                 <!-- Description -->
-                <p class="text-white/60 text-sm sm:text-base leading-relaxed max-w-lg font-light mb-8 lg:mb-6 animate-fade-in-up" style="animation-delay: 0.4s;">
+                <p class="text-white/60 text-sm sm:text-base leading-relaxed max-w-none font-light mb-8 lg:mb-6 animate-fade-in-up" style="animation-delay: 0.4s;">
                     Embedded legal and compliance for technology businesses; we operate inside your team to deliver the legal infrastructure that lets you build, scale, and raise.
                 </p>
 
                 <!-- Action Buttons -->
                 <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-8 lg:mb-6 animate-fade-in-up" style="animation-delay: 0.6s;">
-                    <a href="https://calendly.com/ivoirelegal" target="_blank" class="group w-full sm:w-auto px-5 sm:px-7 py-3.5 bg-[#cda151] hover:bg-[#b88f40] text-white font-semibold text-xs sm:text-sm rounded-[6px] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#cda151]/10">
+                    <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="group w-full sm:w-auto px-5 sm:px-7 py-3.5 bg-[#cda151] hover:bg-[#b88f40] text-white font-semibold text-xs sm:text-sm rounded-[6px] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#cda151]/10">
                         <span>Book a free consultation</span>
                         <span class="text-lg transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
                     </a>
@@ -45,22 +35,22 @@
                 <div class="w-full h-[1px] bg-white/10 my-6 lg:my-5 animate-fade-in-up" style="animation-delay: 0.7s;"></div>
 
                 <!-- Trust Avatars & Text -->
-                <div class="flex flex-row items-center gap-3 sm:gap-4 mb-10 lg:mb-0 animate-fade-in-up" style="animation-delay: 0.8s;">
+                <div class="flex flex-row items-center gap-3 sm:gap-4 mb-2 animate-fade-in-up" style="animation-delay: 0.8s;">
                     <div class="flex -space-x-2.5 shrink-0">
                         <div class="flex items-center justify-center w-8 h-8 rounded-full bg-[#E5B85E] text-black text-[10px] font-bold ring-2 ring-[#161616]">BA</div>
                         <div class="flex items-center justify-center w-8 h-8 rounded-full bg-[#D9A74A] text-black text-[10px] font-bold ring-2 ring-[#161616]">NO</div>
                         <div class="flex items-center justify-center w-8 h-8 rounded-full bg-[#C5943B] text-black text-[10px] font-bold ring-2 ring-[#161616]">OO</div>
                         <div class="flex items-center justify-center w-8 h-8 rounded-full bg-[#b88f40] text-white text-[10px] font-bold ring-2 ring-[#161616]">+</div>
                     </div>
-                    <p class="text-[11px] sm:text-xs md:text-sm text-white/50 leading-relaxed max-w-sm flex-1">
+                    <p class="text-[11px] sm:text-xs md:text-sm text-white/50 leading-relaxed max-w-none flex-1">
                         <span class="font-bold text-white/80">Trusted by technology founders</span> across fintech, healthtech, SaaS &amp; payments in Nigeria and Africa.
                     </p>
                 </div>
             </div>
 
-            <!-- Right Side (Premium Engagement Card) -->
-            <div class="w-full hidden lg:block animate-fade-in-up" style="animation-delay: 0.6s;">
-                <div class="relative w-full max-w-md mx-auto lg:ml-auto rounded-[24px] bg-white p-5 sm:p-7 text-[#242424] shadow-[0_20px_50px_rgba(0,0,0,0.35)] border-t-[5px] border-[#cda151]">
+            <!-- Premium Engagement Card (Now Below and Centered/Spanning) -->
+            <div class="w-full animate-fade-in-up" style="animation-delay: 0.6s;">
+                <div class="relative w-full max-w-none rounded-[24px] bg-white p-5 sm:p-7 text-[#242424] shadow-[0_20px_50px_rgba(0,0,0,0.35)] border-t-[5px] border-[#cda151]">
                     <!-- Subtle ambient glow behind the card -->
                     <div class="absolute -inset-1 rounded-[25px] bg-gradient-to-r from-[#cda151]/20 to-transparent blur-md -z-10 opacity-30"></div>
                     
@@ -70,7 +60,7 @@
 
                     <div class="mb-5">
                         <h2 class="text-lg sm:text-xl font-bold tracking-tight text-[#1a1a1a]">
-                            Paylode &bull; CBN Licensed PSSP
+                            Panpal &bull; CBN Licensed PSSP
                         </h2>
                         <p class="mt-0.5 text-xs sm:text-sm font-medium text-black/40">
                             Series A &bull; Fintech &bull; Lagos, Nigeria

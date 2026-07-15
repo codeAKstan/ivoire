@@ -10,7 +10,7 @@
                 <div class="w-12 h-[1px] bg-[#cda151]"></div>
                 <h2 class="text-[#151515] text-4xl lg:text-5xl font-light tracking-tight" style="font-family: 'Playfair Display', serif;">Resources</h2>
             </div>
-            <p class="text-gray-500 text-base sm:text-lg max-w-2xl leading-relaxed">
+            <p class="text-gray-500 text-base sm:text-lg max-w-none leading-relaxed">
                 We’re here to be helpful. That’s why we’ve posted public articles for clients and anyone else to leverage for their own unique purposes.
             </p>
         </div>

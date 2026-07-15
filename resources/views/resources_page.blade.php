@@ -21,11 +21,11 @@
                         <span class="text-xs font-bold tracking-[0.3em] uppercase text-[#cda151]">Knowledge Hub</span>
                     </div>
                     
-                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-light text-[#151515] leading-tight mb-10 tracking-tight" style="font-family: 'Playfair Display', serif;">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-light text-[#151515] leading-tight mb-10 tracking-tight" style="font-family: 'Playfair Display', serif;">
                         Insights for the <span class="italic text-[#cda151]">Digital Economy.</span>
                     </h1>
 
-                    <div class="max-w-2xl">
+                    <div class="max-w-none">
                         <p class="text-lg md:text-xl text-gray-500 font-light leading-relaxed mb-12">
                             Stay ahead of every regulatory change with Ivoire Legal's pan-African roundup, quarterly reports, and instant alerts for technology companies.
                         </p>

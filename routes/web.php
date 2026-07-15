@@ -73,13 +73,23 @@ Route::view('/schedule', 'contact')->name('schedule'); // Reusing contact for no
 
 Route::view('/careers', 'careers')->name('careers');
 Route::post('/careers', function (\Illuminate\Http\Request $request) {
-    $request->validate([
+    $validated = $request->validate([
         'name' => 'required|string|max:255',
         'email' => 'required|email|max:255',
         'role' => 'required|string|max:255',
+        'linkedin' => 'nullable|url|max:255',
         'resume_url' => 'required|url',
         'message' => 'required|string',
     ]);
+
+    $application = \App\Models\JobApplication::create($validated);
+
+    try {
+        \Illuminate\Support\Facades\Mail::to('codeakstan@gmail.com')->send(new \App\Mail\JobApplicationSubmitted($application));
+    } catch (\Exception $e) {
+        \Illuminate\Support\Facades\Log::error('Mail sending failed: ' . $e->getMessage());
+    }
+
     return redirect()->back()->with('success', 'Your application for the ' . $request->role . ' position has been received. Our team will review it and get in touch.');
 })->name('careers.apply');
 

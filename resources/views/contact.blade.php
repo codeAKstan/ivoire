@@ -95,7 +95,7 @@
                                 <p class="text-white/50 font-light leading-relaxed mb-10 max-w-md mx-auto lg:mx-0">
                                     Skip the intake forms. Pick a time that works for you and let's discuss your roadmap directly.
                                 </p>
-                                <a href="https://calendly.com/ivoirelegal" target="_blank" class="inline-flex items-center justify-center gap-3 bg-[#cda151] hover:bg-[#b88f40] text-black font-bold px-10 py-5 rounded-xl uppercase tracking-[0.2em] text-xs transition-all duration-500 shadow-lg shadow-[#cda151]/20 group">
+                                <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="inline-flex items-center justify-center gap-3 bg-[#cda151] hover:bg-[#b88f40] text-black font-bold px-10 py-5 rounded-xl uppercase tracking-[0.2em] text-xs transition-all duration-500 shadow-lg shadow-[#cda151]/20 group">
                                     Book a Consultation
                                     <svg class="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

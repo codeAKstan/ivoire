@@ -4,7 +4,7 @@
     <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#cda151]/3 blur-[120px] rounded-full -ml-64 -mb-64"></div>
 
     <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-        <div class="mb-20 max-w-3xl">
+        <div class="mb-20 max-w-none">
             <div class="flex items-center gap-4 mb-4">
                 <div class="h-[1px] w-12 bg-[#cda151]"></div>
                 <span class="text-xs font-bold tracking-[0.3em] uppercase text-[#cda151]">Practice Areas</span>
@@ -39,7 +39,7 @@
                 </p>
                 
                 <div class="mt-auto">
-                    <a href="https://calendly.com/ivoirelegal" target="_blank" class="inline-flex items-center gap-2 text-[#cda151] text-xs font-bold uppercase tracking-widest group-hover:gap-3 transition-all duration-300">
+                    <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="inline-flex items-center gap-2 text-[#cda151] text-xs font-bold uppercase tracking-widest group-hover:gap-3 transition-all duration-300">
                         Book a Consultation
                         <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

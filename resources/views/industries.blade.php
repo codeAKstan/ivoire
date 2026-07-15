@@ -106,7 +106,7 @@
 
                 <div class="max-w-7xl mx-auto relative z-10">
                     <!-- Section Header -->
-                    <div class="mb-24 max-w-3xl">
+                    <div class="mb-24 max-w-none">
                         <div class="flex items-center gap-4 mb-4">
                             <div class="h-[1px] w-12 bg-[#cda151]"></div>
                             <span class="text-xs font-bold tracking-[0.3em] uppercase text-[#cda151]">Industries Covered</span>
@@ -476,7 +476,7 @@
                     <p class="text-white/50 text-sm leading-relaxed max-w-xl mx-auto mb-8 font-light">
                         Book a free 45-minute consultation. We'll tell you honestly whether we're the right fit, and what you need either way.
                     </p>
-                    <a href="https://calendly.com/ivoirelegal" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-[#cda151] hover:bg-[#b88f40] text-black font-bold text-xs tracking-[0.15em] uppercase transition-all duration-300 rounded-[4px] shadow-lg group">
+                    <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-[#cda151] hover:bg-[#b88f40] text-black font-bold text-xs tracking-[0.15em] uppercase transition-all duration-300 rounded-[4px] shadow-lg group">
                         Book a consultation &rarr;
                     </a>
                 </div>

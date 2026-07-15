@@ -1,12 +1,11 @@
 <section class="py-24 bg-[#FAF8F5] relative overflow-hidden border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-        <!-- Header -->
-        <div class="max-w-3xl mb-16">
+        <div class="max-w-none mb-16">
             <span class="text-[10px] font-bold tracking-[0.25em] text-[#cda151] uppercase block mb-4">
                 Client Stories
             </span>
             <h2 class="text-[#151515] text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight mb-6 leading-tight" style="font-family: 'Playfair Display', serif;">
-                What technology founders <br>say about working <span class="text-[#cda151] italic font-serif">with us.</span>
+                What technology founders say about working <span class="text-[#cda151] italic font-serif">with us.</span>
             </h2>
         </div>
 

@@ -19,7 +19,7 @@
         <!-- Right Action (Hidden on Mobile) -->
         <div class="hidden md:flex items-center space-x-6">
             <a href="/contact" class="text-sm font-medium text-gray-600 hover:text-[#cda151] transition-colors duration-300">Contact</a>
-            <a href="https://calendly.com/ivoirelegal" target="_blank" class="px-5 py-2.5 bg-[#151515] hover:bg-[#cda151] text-white text-xs font-bold tracking-[0.1em] uppercase rounded-[4px] shadow-sm hover:shadow transition-all duration-300">
+            <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="px-5 py-2.5 bg-[#151515] hover:bg-[#cda151] text-white text-xs font-bold tracking-[0.1em] uppercase rounded-[4px] shadow-sm hover:shadow transition-all duration-300">
                 Book a call
             </a>
         </div>
@@ -41,7 +41,7 @@
                 <a href="/about" class="text-base font-medium text-gray-700 hover:text-[#cda151] transition-colors">About</a>
                 <a href="/careers" class="text-base font-medium text-gray-700 hover:text-[#cda151] transition-colors">Careers</a>
                 <a href="/contact" class="text-base font-medium text-gray-700 hover:text-[#cda151] transition-colors pt-2 border-t border-gray-100">Contact</a>
-                <a href="https://calendly.com/ivoirelegal" target="_blank" class="w-full text-center py-3 bg-[#151515] hover:bg-[#cda151] text-white text-sm font-bold tracking-wider uppercase rounded-[4px] transition-colors duration-300">
+                <a href="https://ivoirelegal.zohobookings.com/ivoirelegal" target="_blank" class="w-full text-center py-3 bg-[#151515] hover:bg-[#cda151] text-white text-sm font-bold tracking-wider uppercase rounded-[4px] transition-colors duration-300">
                     Book a call
                 </a>
             </div>

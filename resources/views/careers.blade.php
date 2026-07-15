@@ -61,13 +61,13 @@
             <section class="py-28 bg-[#FAF8F5] relative overflow-hidden border-b border-gray-100">
                 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
                     <!-- Heading -->
-                    <div class="max-w-3xl mb-20">
+                    <div class="max-w-none mb-20">
                         <div class="flex items-center space-x-4 mb-4">
                             <div class="h-[1px] w-12 bg-[#cda151]"></div>
                             <span class="text-xs font-bold tracking-[0.3em] uppercase text-[#cda151]">Our Culture</span>
                         </div>
                         <h2 class="text-3xl md:text-5xl font-light text-[#151515] tracking-tight leading-tight" style="font-family: 'Playfair Display', serif;">
-                            How we operate differently <br>from <span class="italic text-[#cda151] font-serif">traditional firms.</span>
+                            How we operate differently from <span class="italic text-[#cda151] font-serif">traditional firms.</span>
                         </h2>
                     </div>
 
