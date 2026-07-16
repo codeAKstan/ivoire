@@ -1,4 +1,4 @@
-<section class="relative min-h-screen w-full flex items-center justify-center bg-[#161616] py-20 lg:py-28">
+<section class="relative min-h-screen w-full flex items-center justify-center bg-[#161616] pt-32 pb-20 md:py-20 lg:py-28">
 
     <!-- Premium Background Radial Glows -->
     <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-[#cda151]/[0.04] rounded-full blur-[130px] pointer-events-none z-10"></div>
